@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Flat Design Desarrollo Web</title>
+</head>
+<body>
+    <!-- Section Inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 24 24" style="fill: rgb(216, 158, 10);transform: msFilter"><path d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1 14.66 14.66 0 0 0-4.58 0 10.14 10.14 0 0 0-.53-1.1 16 16 0 0 0-4.13 1.3 17.33 17.33 0 0 0-3 11.59 16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83 3.39 3.39 0 0 0 .42-.33 11.66 11.66 0 0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84 12.41 12.41 0 0 0 1.08 1.78 16.44 16.44 0 0 0 5.06-2.59 17.22 17.22 0 0 0-3-11.59 16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.93 1.93 0 0 1 1.8 2 1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.92 1.92 0 0 1 1.8 2 1.92 1.92 0 0 1-1.8 2z"></path></svg>
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccioado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobrenosotros" onclick="seleccionar(this)">SOBRE NOSOTROS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Somos <span>Underground Design</span>, tu mejor opcion a la hora de crear una web.</h2>
+                <p class="descripcion">Descubri la mejor version de tu negocion en linea.</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>  
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.28,101.95 C76.46,-84.53 138.54,175.97 500.00,49.98 L501.97,150.31 L-0.84,153.28 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </section>
+    <!--SECCION SOBRE NOSOTROS-->
+    <section id="sobrenosotros">
+        <div class="contenedor-video">
+            <video controls>
+                <source src="videos/v.1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="sobrenosotros">
+            <p class="titulo-seccion">Sobre Nosotros</p>
+            <h2>Hola somos <span>Underground Design</span></h2>
+            <h3>Somos una agencia de marketing experta en diseño y desarrollo Web.</h3>
+            <p>Nos encargamos de diseñar y desarrollar la página web ideal para cada negocio. Ayudamos a nuestros clientes a posicionar su 
+                web para que cuenten con una gran visibilidad y alcance. </p>
+        </div>
+    </section>
+<!-- SECCION PORTAFOLIO-->
+<section id="portfolio">
+    <h3 class="titulo-seccion">NUESTROS PROYECTOS</h3>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <a href="planilla4 - J5/index2.html" target="_blank"><img src="imagenes/foto1.jpg" alt=""></a>
+            <div class="info">
+                <h4>Descripcion del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <a href="" target="_blank"></a><img src="imagenes/foto2.jpg" alt=""></a>
+            <div class="info">
+                <h4>Descripcion del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <a href="" target="_blank"></a><img src="imagenes/foto3.jpg" alt=""></a>
+            <div class="info">
+                <h4>Descripcion del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECCION CONTACTO -->
+<seccion id="contacto">
+    <h3 class="titulo-seccion">Contacta ahora</h3>
+    <div class="contenedor-form">
+        <form action="">
+            <div class="fila mitad">
+                <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                <input type="text" placeholder="Direccion de Email" class="input-mitad">
+            </div>
+            <div class="fila">
+                <input type="text" placeholder="Tema..." class="input-full">
+            </div>
+            <div class="fila">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input-full"></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar" >
+        </form>
+    </div>
+</seccion>
+<!--SECCION FOOTER-->
+<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-3.67,89.13 C46.56,237.16 259.31,-12.50 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000;"></path></svg></div>
+<footer>
+    <p>Todos los derechos reservados - 2023</p>
+</footer>
+<script src="scrip.js"></script>
+
+    
+<!--</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="https://thumbs.dreamstime.com/b/logotipo-din%C3%A1mico-de-la-letra-c-logo-design-con-el-l%C3%ADquido-del-chapoteo-119133963.jpg" alt="">
+    </div>
+</body>
+</html>-->
